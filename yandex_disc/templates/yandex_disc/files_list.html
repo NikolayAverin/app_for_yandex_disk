@@ -9,7 +9,7 @@
     <ul>
         {% for file in files %}
             <li>
-                <a href="{{ file._embedded.download_url }}" download="{{ file.name }}">{{ file.name }}</a>
+                <a href="{{ file.embedded.download_url }}" download="{{ file.name }}">{{ file.name }}</a>
             </li>
         {% endfor %}
     </ul>
